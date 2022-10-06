@@ -1,0 +1,19 @@
+h1 {
+	color: #85d8d8;
+}
+
+h2 {
+	color: hsl(0, 60%, 43%);
+}
+
+h3 {
+	color: rgb(110, 71, 155);
+}
+
+h4 {
+	color: grey;
+}
+
+div {
+	background-color: rgb(204, 191, 231);
+}

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#first-container
+{
+	background-color: #1F2937;
+	margin: 50px;
+	padding: 40px;
+	width: 70%;
+}
+
+/* styling the navigation */ 
+.navbar
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+/* for the bullet points */ 
+.nav-list
+{
+	list-style: none;
+}
+
+/* each item in the navigation */ 
+.nav-list .list-item
+{
+	display: inline-block;
+	padding: 10px;
+}
+
+.navbar a
+{
+	font-size: 18px;
+	color: #E5E7EB;
+	text-decoration: none ;
+}
+
+.navbar a:hover
+{
+	color: aquamarine;
+}
+
+.logo 
+{
+	font-size: 18px;
+	color: #F9FAF8;
+}
+
+.main h2
+{
+	font-size: 28px;
+	color: #F9FAF8;
+}
+
+.main-text p
+{
+	font-size: 18px;
+	color: #E5E7EB;
+}
+
+.main button {
+	color: #F9FAF8;
+	background-color: #3882F6;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+.main-img
+{
+	background: grey;
+	padding: 65px;
+	margin: 50px;
+	width: 70%;
+	height: 150px;
+	text-align: center;
+}
+
+.main-img p {
+	color: #E5E7EB;
+}
+
+.main
+{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.main-text 
+{
+	padding-right: 10px;
+	margin: 50px;
+}
+
+.main-text p
+{
+	margin: 10px;
+}
+
+
+/* second part */
+#second-container
+{
+	display: flex;
+	justify-content: center;
+}
+
+.box
+{
+	margin: 50px;
+}
+
+.box-item 
+{
+	width: 100px;
+	height: 100px;
+	background: rgb(71, 147, 147);
+	border-radius: 15px;
+	margin: 35px;
+	margin-bottom: 4px;
+}
+
+.box p{
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+
+/* third part */
+#third-part{
+	text-align: center;
+	background-color: #E5E7EB;
+	margin: 50px;
+	padding: 50px;
+}
+
+.info
+{
+	padding: 80px;
+}
+
+.info p{
+	font-size: 36px;
+	color: #1F2937;
+	font-style: light italic;
+}
+
+/*fourth-time*/
+#fourth-part{
+	background-color: #3882F6;
+	margin: 50px;
+	display: flex;
+	width: 60%;
+	justify-content: space-between;
+}
+
+.action-text{
+	color: rgb(255, 255, 255);
+	margin: 50px;
+	padding: 10px 20px;
+}
+
+.action-btn{
+	margin: 50px;
+	padding: 10px 20px;
+	background-color: #3882F6;
+	border-width: 2px;
+	border-color: #fff;
+	color: #fff;
+	border-radius: 10px;
+}
+
+/* footer */
+#footer{
+	background-color: #1F2937;
+	margin: 50px;
+	padding: 20px 20px;
+	width: 80%;
+}
+
+.footer-text{
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+}
