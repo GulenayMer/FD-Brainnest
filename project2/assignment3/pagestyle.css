@@ -1,29 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
-*{
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
 
 body
 {
 	font-family: 'Roboto Condensed', sans-serif;
+	
+}
+
+#whole-page
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 }
 
 #first-container
 {
 	background-color: #1F2937;
-	margin: 50px;
-	padding: 40px;
+ 	margin: 40px;
+	padding-left: 90px;
+	padding-right: 90px;
+	padding-bottom: 40px;
 	width: 70%;
+	height: 400px;
 }
 
 /* styling the navigation */ 
 .navbar
 {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-right: 50px;
+	margin-left: 50px;
 }
 
 /* for the bullet points */ 
@@ -36,14 +45,14 @@ body
 .nav-list .list-item
 {
 	display: inline-block;
-	padding: 10px;
+	padding: 5px;
 }
 
 .navbar a
 {
 	font-size: 18px;
 	color: #E5E7EB;
-	text-decoration: none ;
+	text-decoration: none;
 }
 
 .navbar a:hover
@@ -53,46 +62,13 @@ body
 
 .logo 
 {
-	font-size: 18px;
+	font-size: 24px;
+	font-weight: 600;
 	color: #F9FAF8;
-}
-
-.main h2
-{
-	font-size: 28px;
-	color: #F9FAF8;
-}
-
-.main-text p
-{
-	font-size: 18px;
-	color: #E5E7EB;
-}
-
-.main button {
-	color: #F9FAF8;
-	background-color: #3882F6;
-	padding: 10px 20px;
-	border-radius: 10px;
-}
-
-.main-img
-{
-	background: grey;
-	padding: 65px;
-	margin: 50px;
-	width: 70%;
-	height: 150px;
-	text-align: center;
-}
-
-.main-img p {
-	color: #E5E7EB;
 }
 
 .main
 {
-	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
 
@@ -100,41 +76,88 @@ body
 
 .main-text 
 {
-	padding-right: 10px;
-	margin: 50px;
+	padding: 25px;
+	margin-left: 20px;
+}
+
+.main h2
+{
+	font-size: 40px;
+	font-weight: 700;
+	color: #F9FAF8;
+	margin-bottom: auto;
 }
 
 .main-text p
 {
-	margin: 10px;
+	font-size: 18px;
+	color: #E5E7EB;
+	margin-top: auto;
+}
+
+.main button {
+	color: #F9FAF8;
+	background-color: #3882F6;
+	font-weight: 600;
+	padding: 7px 30px;
+	border-radius: 7px;
+	border: none;
+}
+
+.main-img
+{
+	background: grey;
+	padding: 65px;
+	margin: 60px;
+	width: 70%;
+	height: 50px;
+	text-align: center;
+}
+
+.main-img p {
+	color: #E5E7EB;
 }
 
 
 /* second part */
+.second-h
+{
+	color: #1F2937;
+	font-size: 36px;
+	font-weight: 800;
+}
+
 #second-container
 {
 	display: flex;
 	justify-content: center;
+	margin-left: 40px;
+	margin-right: 40px;
+	width: 70%;
+	height: 200px;
+	padding-left: 70px;
+	padding-right: 60px;
 }
 
 .box
 {
-	margin: 50px;
+	width: 30%;
 }
 
 .box-item 
 {
-	width: 100px;
-	height: 100px;
-	background: rgb(71, 147, 147);
-	border-radius: 15px;
-	margin: 35px;
-	margin-bottom: 4px;
+	width: 55%;
+	height: 110px;
+	background: rgb(229, 236, 236);
+	border-radius: 10px;
+	padding-left: 10px;
 }
 
 .box p{
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 5px;
+	padding-right: 30px;
+	margin-right: 45px;
+	margin-top: auto;
 }
 
 
@@ -142,56 +165,75 @@ body
 #third-part{
 	text-align: center;
 	background-color: #E5E7EB;
-	margin: 50px;
+	margin: 40px;
 	padding: 50px;
+	width: 70%;
+	height: 300px;
 }
 
 .info
 {
-	padding: 80px;
+	padding: 20px 80px;
 }
 
 .info p{
 	font-size: 36px;
 	color: #1F2937;
 	font-style: light italic;
+	text-align: left;
+	font-style: italic;
+	
+}
+
+.strong
+{
+	text-align-last: right;
 }
 
 /*fourth-time*/
 #fourth-part{
 	background-color: #3882F6;
-	margin: 50px;
+	margin: 40px;
 	display: flex;
+	justify-content: center;
 	width: 60%;
-	justify-content: space-between;
+	height: 120px;
 }
 
 .action-text{
 	color: rgb(255, 255, 255);
-	margin: 50px;
 	padding: 10px 20px;
+	margin-top: 10px;
+}
+
+.action-text p {
+	margin: auto;
+}
+
+.action-text h2 {
+	margin-bottom: auto;
 }
 
 .action-btn{
-	margin: 50px;
-	padding: 10px 20px;
+	margin: 40px;
 	background-color: #3882F6;
 	border-width: 2px;
 	border-color: #fff;
 	color: #fff;
-	border-radius: 10px;
+	padding: 7px 30px;
+	border-radius: 7px;
 }
 
 /* footer */
 #footer{
 	background-color: #1F2937;
-	margin: 50px;
 	padding: 20px 20px;
-	width: 80%;
+	width: 70%;
+	margin: 40px;
+	height: 30px;
 }
 
 .footer-text{
 	color: #fff;
 	text-align: center;
-	padding: 15px;
 }
