@@ -1,0 +1,32 @@
+
+body
+{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	background-color: rgb(174, 237, 179);
+}
+
+a{
+	text-decoration: none;
+
+}
+
+.a-first
+{
+	text-align: center;
+	margin: 20px;
+}
+
+.a-second
+{
+	margin: 20px;
+	text-align: center;
+}
+
+img
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	border-radius: 10px;
+	width: 40%;
+}
