@@ -1,88 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="pagestyle.css">
-		<title>Homepage</title>
-	</head> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+	<link rel="stylesheet" href="pagestyle.css">
+	<title>Homepage</title>
+</head> 
 
-	<body>
-		<div id="whole-page">
-			<div id="first-container">
-				<div class="navbar">
-					<div class="logo">
-						<a href="#">Header Logo</a>
-					</div>
-					<ul class="nav-list">
-						<li class="list-item">
-							<a href="#">header link one</a>
-						</li>
-						<li class="list-item">
-							<a href="#">header link two</a>
-						</li>
-						<li class="list-item">
-							<a href="#">header link three</a>
-						</li>
-					</ul>
-				</div>
+<body>
+	<div id="header">
+		<div class="logo" src="./images/logo.jpg">
+			<a href="#">Logo</a>
+		</div>
+		<nav id="navbar">
+			<ul class="nav-list">
+				<li class="list-item">
+					<a href="#">Home</a>
+				</li>
+				<li class="list-item">
+					<a href="#">About</a>
+				</li>
+				<li class="list-item">
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 
-				<div class="main">
-					<div class="main-text">
-						<h2>This website is awesome</h2>
-						<p>This website has some subtext that goes here under the main title. It is a smaller font and the color is lower contrast</p>
-						<button>Sign Up</button>
-					</div>
-					<div class="main-img">
-						<p>this is a placeholder for an image</p>
-					</div>
-				</div>
+	<div id="intro-container">
+		<div class="intro-text">
+			<h2>This website is awesome</h2>
+			<p>This website has some subtext that goes here under the main title. It is a smaller font and the color is lower contrast</p>
+			<button>Sign Up</button>
+		</div>
+		<div class="intro-img">
+			<img src="./images/programming.png" alt="programming"></img>
+		</div>
+	</div>
+
+	<section id="project-section">
+		<h2 class="project-header">Our Services</h2>
+		<div class="projects">
+			<div class="project-item">
+				<img class="project-img" src="./images/agile.png" alt="agile"></img>
+				<p>Training for Agile Project Management</p>
 			</div>
-
-			<h2 class="second-h">Some random information.</h2>
-			<div id="second-container">
-				<div class="box">
-					<div class="box-item"></div>
-					<p>this is some subtext under an illustration or image</p>
-				</div>
-				<div class="box">
-					<div class="box-item"></div>
-					<p>this is some subtext under an illustration or image</p>
-				</div>
-				<div class="box">
-					<div class="box-item"></div>
-					<p>this is some subtext under an illustration or image</p>
-				</div>
-				<div class="box">
-					<div class="box-item"></div>
-					<p>this is some subtext under an illustration or image</p>
-				</div>
+			<div class="project-item">
+				<img class="project-img" src="./images/projectmanagement.jpg" alt="project management"></img>
+				<p>Training for Project Managers </p>
 			</div>
-
-			<div id="third-part">
-				<div class="info">
-					<p>This is an inspring quote, or testimonial from a customer. Maybe it's just filling up space, or
-					maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-					<p class="strong"><strong>-Thor</strong></p>
-				</div>
+			<div class="project-item">
+				<img class="project-img" src="./images/productmanagement.png" alt="product manager"></img>
+				<p>Training for Product Managers</p>
 			</div>
-
-			<div id="fourth-part">
-				<div class="action-text">
-					<h2>Call to action! It's time!</h2>
-					<p>Sign up for our product by clicking that button right over there!</p>
-				</div>
-				<div>
-					<button class="action-btn">Sign up</button>
-				</div>
-			</div>
-
-			<div id="footer">
-				<div class="footer-text">
-					<p>Copyright &#169</p>
-				</div>
+			<div class="project-item">
+				<img class="project-img" src="./images/motivation.png" alt="motivation"></img>
+				<p>Training for Motivation</p>
 			</div>
 		</div>
-	</body>
+	</section>
+
+	<div id="quote-part">
+		<div class="quote">
+			<p>“If they don’t give you a seat at the table, bring a folding chair.”</p>
+			<p class="quote-owner"><em>- Shirley Chisholm</em></p>
+		</div>
+	</div>
+
+	<div id="signup-part">
+		<div class="signup-text">
+			<h2>Call to action! It's time!</h2>
+			<p>Sign up for our product by clicking that button right over there!</p>
+		</div>
+		<div>
+			<button class="action-btn">Sign up</button>
+		</div>
+	</div>
+
+	<!-- Contact Section-->
+	<footer id="footer">
+		<a href="#" class="email">mervegulenay@gmail.com</a>
+		<ul class="footer-list">
+			<li class="list-item">
+				<a href="https://github.com/GulenayMer" target="blank" class="list-link">
+					<i class="fab fa-github"></i>
+				</a>
+			</li>
+			<li class="list-item">
+				<a href="#" target="blank" class="list-link">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</li>
+			<li class="list-item">
+				<a href="mailto:mervegulenay@gmail.com" target="blank" class="list-link">
+					<i class="fa fa-envelope"></i>
+				</a>
+			</li>
+		</ul>
+		<p class="copyright">Copyright &#169;<span>Merve Gülenay</span></p>
+	</footer>
+</body>
 </html>

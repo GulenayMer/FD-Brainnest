@@ -3,218 +3,226 @@
 	src: url(fonts/Roboto-Regular.ttf) format('truetype');
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body
 {
 	font-family: 'Roboto', sans-serif;
-}
-
-#whole-page
-{
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	justify-content: center;
 }
 
-#first-container
+/* header: logo and navbar */
+#header
 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	background-color: #1F2937;
- 	margin: 40px;
-	padding-left: 90px;
-	padding-right: 90px;
-	padding-bottom: 40px;
-	width: 70%;
-	height: 400px;
+	width: 100%;
+	padding: 20px;
+	height: auto;
 }
 
 /* styling the navigation */ 
-.navbar
+#navbar
 {
-	display: flex;
-	justify-content: space-between;
-	margin-right: 50px;
-	margin-left: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
-/* for the bullet points */ 
+ /* */ 
+
 .nav-list
 {
 	list-style: none;
+	display: flex;
+    gap: 4em;
 }
 
-/* each item in the navigation */ 
-.nav-list .list-item
-{
-	display: inline-block;
-	padding: 5px;
-}
-
-.navbar a
+#navbar a
 {
 	font-size: 18px;
 	color: #E5E7EB;
 	text-decoration: none;
 }
 
-.navbar a:hover
+#navbar a:hover
 {
 	color: aquamarine;
 }
 
-.logo 
+.logo
 {
-	font-size: 24px;
-	font-weight: 600;
-	color: #F9FAF8;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
-.main
+.logo a {
+	color: #f9faf8;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 24px;
+}
+
+/*  */
+#intro-container
+{
+	background-color: #1F2937;
+	width: 100%;
+	height: auto;
+	display: flex;
+	gap: 3em;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+}
+
+.intro-text h2, p
 {
 	display: flex;
-	justify-content: space-between;
-
+	flex-direction: column;
+	justify-content: center;
 }
 
-.main-text 
-{
-	padding: 25px;
-	margin-left: 20px;
-}
-
-.main h2
+.intro-text h2
 {
 	font-size: 40px;
 	font-weight: 700;
 	color: #F9FAF8;
-	margin-bottom: auto;
 }
 
-.main-text p
+.intro-text p
 {
 	font-size: 18px;
 	color: #E5E7EB;
-	margin-top: auto;
 }
 
-.main button {
+.intro-text button {
 	color: #F9FAF8;
 	background-color: #3882F6;
 	font-weight: 600;
-	padding: 7px 30px;
+	padding: 7px 20px;
 	border-radius: 7px;
 	border: none;
 }
 
-.main-img
+.intro-img img
 {
-	background: grey;
-	padding: 65px;
-	margin: 60px;
-	width: 70%;
-	height: 50px;
-	text-align: center;
-}
-
-.main-img p {
-	color: #E5E7EB;
+	width: 500px;
+	height: auto;
 }
 
 
-/* second part */
-.second-h
+/* ----------- info part --------- */
+.project-title
 {
 	color: #1F2937;
 	font-size: 36px;
 	font-weight: 800;
 }
 
-#second-container
+#project-section
 {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 30px;
+	margin-top: 30px;
+	background-color: #cbcaec;
+}
+
+.projects{
+	display: flex;
+	align-items: center;
 	justify-content: center;
-	margin-left: 40px;
-	margin-right: 40px;
-	width: 70%;
-	height: 200px;
-	padding-left: 70px;
-	padding-right: 60px;
+	gap: 3em;
 }
 
-.box
-{
-	width: 30%;
+.project-item{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
-.box-item 
+.project-img
 {
-	width: 35%;
-	height: 80px;
+	width: 200px;
+	height: auto;
 	background: #fff;
 	border-radius: 10px;
-	padding-left: 10px;
 	border: 3px solid;
 	border-color: #3882F6;
 }
 
-.box p{
-	padding-left: 3px;
-	padding-right: 50px;
-	margin-right: 70px;
-	margin-top: 4px;
+.project-item p{
 	font-size: 10px;
+	text-align: center;
+} 
+
+.project-img:hover{
+	opacity: 0.5;
+	cursor: pointer;
 }
 
-
-/* third part */
-#third-part{
+/* ------ quote part  -------- */
+#quote-part{
 	text-align: center;
 	background-color: #E5E7EB;
-	margin: 40px;
+	margin-top: 30px;
 	padding: 50px;
-	width: 70%;
-	height: 300px;
+	width: 100%;
+	height: auto;
 }
 
-.info
-{
-	padding: 20px 80px;
-}
 
-.info p{
+.quote p{
 	font-size: 36px;
 	color: #1F2937;
 	font-style: light italic;
 	text-align: left;
 	font-style: italic;
-	
 }
 
-.strong
+.quote-owner
 {
 	text-align-last: right;
 }
 
-/*fourth-time*/
-#fourth-part{
+/*  ----- signup part  ---- */
+#signup-part{
 	background-color: #3882F6;
-	margin: 40px;
+	margin: 30px;
 	display: flex;
 	justify-content: center;
-	width: 60%;
-	height: 120px;
+	width: 80%;
+	height: auto;
 }
 
-.action-text{
-	color: rgb(255, 255, 255);
+.signup-text{
+	color: #fff;
 	padding: 10px 20px;
 	margin-top: 10px;
 }
 
-.action-text p {
+.signup-text p {
 	margin: auto;
 }
 
-.action-text h2 {
+.signup-text h2 {
 	margin-bottom: auto;
 }
 
@@ -228,16 +236,56 @@ body
 	border-radius: 7px;
 }
 
-/* footer */
-#footer{
-	background-color: #1F2937;
-	padding: 20px 20px;
-	width: 70%;
-	margin: 40px;
-	height: 30px;
+.action-btn:hover
+{
+	opacity: 0.6;
+	background-color: #a3e0ef;
+	color: #101317;
 }
 
-.footer-text{
-	color: #fff;
+/* ---------------- Footer Section  --------- */
+
+#footer{
+	background-color: #1F2937;
 	text-align: center;
+	padding: 2.5em 0;
+	width: 100%;
+	color: #fff;
+}
+
+.email{
+    text-decoration: none;
+	color: #fff;
+}
+
+.email:hover {
+	color: aquamarine;
+}
+
+.email:hover a{
+	text-decoration: underline;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    padding: 0;
+}
+
+.list-item {
+    margin: 0 0.5em;
+}
+
+.list-link:hover {
+    /* The opacity-level describes the transparency-level,
+     where 1 is not transparent at all, 0.5 is 50% see-through, and 0 is completely transparent. */
+    opacity: 0.6;
+	color: aquamarine;
+}
+
+.list-link {
+    padding: 0.5em;
+	color: #fff;
 }
