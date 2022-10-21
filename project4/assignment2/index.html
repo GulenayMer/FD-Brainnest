@@ -5,36 +5,33 @@
 	<meta charset="UTF-8">
 	<title>Rock Paper Scissors</title>
 	<script src="https://kit.fontawesome.com/c3f037cc8f.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="rps_style.css">
+	<link rel="stylesheet" type="text/css" href="RockPaper.css">
 </head>
     
 <body>
 
 	<h1>Rock, Paper or Scissors?</h1>
+
 	<h3>Choose one!</h3>
 	
-	<div class="options">
-		<i id="rock" class="icon iconRock fas fa-hand-rock">
-			<span class="text">rock</span>
-		</i>
-   		<i id="paper" class="icon iconPaper fas fa-hand-paper">
-			<span class="text">paper</span>
-		</i>
-		<i id="scissors" class="icon iconScissors fas fa-hand-scissors">
-			<span class="text">scissors</span>
-		</i>
+	<div class="selections">
+	<i id="rock" class="icon iconRock fas fa-hand-rock">
+		<span class="text">rock</span>
+	</i>
+    <i id="paper" class="icon iconPaper fas fa-hand-paper">
+		<span class="text">paper</span>
+	</i>
+	<i id="scissors" class="icon iconScissors fas fa-hand-scissors">
+		<span class="text">scissors</span>
+	</i>
     </div>
 
 	<div class="score" id="score">
-		<p class="computerDisplay">Computer: <span>0</span></p>
-		<p class="playerDisplay">Player: <span>0</span></p>
+		<h2 class="cDisplay">Computer: <span>0</span></h2>
+		<h2 class="pDisplay">Player: <span>0</span></h2>
    </div>
 
 	<div class="result" id="result">
-		<p></p>
-    </div>
-
-	<div class="over" id="over">
 		<p></p>
     </div>
 
@@ -42,6 +39,6 @@
 		<button class="btn btnRestart" id="restart">Restart</button>
 	</div>
     
-    <script src="rps_script.js"></script>
+    <script src="RockPaper.js"></script>
 </body>
 </html>

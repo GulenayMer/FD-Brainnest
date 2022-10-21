@@ -2,17 +2,37 @@
 
 * {
    box-sizing: border-box;
+
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #d5ede3dc;
+    background-color: rgba(250, 243, 243, 0.863);
     text-align: center;
     display: flex;
     justify-items: center;
     align-items: center;
     flex-direction: column;
     margin: 100px auto;
+}
+
+.btn {
+   background-color: rgb(35, 36, 37);
+   color: rgb(255, 254, 254);
+   padding: 0.9em 1.5em;
+   border-radius: 8px;
+   margin: 20px;
+   box-shadow: 5px 5px 5px black;
+   font-size: 1em;
+   outline: none;
+   cursor: pointer;
+   width:110px;
+   height:50px;
+   text-align:center;
+} 
+
+.btn:hover {
+    border: none;
 }
 
 .icon {
@@ -22,68 +42,35 @@ body {
     width:110px;
     height:50px;
     text-align:center;
-}
 
-.icon:hover{
-    font-size: 5em;
-    transition: 0.5s ease-in;
  }
 
-.text {
-    font-size: 0.4em;
-    display: block;
-    margin: 5px;
-    opacity: 0.7;
+ .icon:hover{
+    font-size: 5em;
+    transition: 1s ease-in;
+ }
+
+ .text {
+     font-size: 0.4em;
+     display: block;
+     margin: 5px;
+     opacity: 0.7;
  }
 
 .score {
     display: flex;
     justify-items: center;
     align-items: center;
+    margin: 20px;
     padding: 10px;
     opacity: 0.9;
 }
 
-.score span{
-	padding: 3px;
-	margin-right: 10px;
-}
-
-.playerDisplay {
-    margin-left: 40px;
-	padding: 20px;
-	font-size: 24px;
-	font-weight: 600;
-}
-
-.computerDisplay
-{
-	padding: 20px;
-	font-size: 24px;
-	font-weight: 600;
+.pDisplay {
+    margin-left: 30px;
 }
 
 .result {
     font-size: 1.5em;
     font-weight: 600;
-	color: #dd5252;
-	font-weight: 600;
-	margin-bottom: 20px;
-}
-
-.btn {
-	background-color: #ccf4e7;
-	color: #070707;
-	padding: 0.7em 1.5em;
-	border-radius: 8px;
-	box-shadow: 5px 5px 5px #7d7a7a;
-	font-size: 1em;
-	outline: none;
-	cursor: pointer;
-	text-align:center;
- } 
- 
-.btn:hover {
-    border: none;
-	color: #4e5c5c;
 }
