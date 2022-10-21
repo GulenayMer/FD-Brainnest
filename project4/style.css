@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: #333333;
+	background-color: #f5fbef;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -15,7 +15,7 @@ body {
 
 body, html{
 	height: 100vh;
-  	font-family: sans-serif;
+  	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 button {
@@ -27,30 +27,30 @@ input{
 	background-color: transparent;
 	text-align: end;
 	width: 100%;
-	color: #d2d2d2;
+	color: #141212;
 	border: 0px;
 	font-size: 4rem;
 }
 
 #main {
-	border: 2px solid #eee6e6;
+	border: 2px solid #1b1a1a;
 	border-radius: 50px;
 	width: 100%;
 	max-width: 280px;
-	background-color: #0f0e0e;
+	background-color: #d1dcb2;
 	padding: 2rem 1rem;
 }
 
 .calculator_header {
-	margin-top: 70px;
+	margin-top: 50px;
 	padding: 12px;
 }
 
-.calculator_footer > * + * {
+.calculator_body > * + * {
 	margin-top: 1rem;
 }
 
-.calculator_footer > *:last-child {
+.calculator_body > *:last-child {
 	gap: 1rem;
 }
 
@@ -87,21 +87,22 @@ input{
 	color: #f69906;
 }
   
-.btn-grey {
-	background-color: #9f9f9f;
+.btn-white {
+	background-color:#ededed;
 	color: #000;
 }
   
-.btn-grey:hover {
-	background-color: #ededed;
+.btn-white:hover {
+	background-color:#e7dede;
 }
   
-.btn-dark-grey {
+.btn-dark-brown{
 	background-color: #313131;
 }
  
-.btn-dark-grey:hover {
-	background-color: #999999;
+.btn-dark-brown:hover {
+	background-color: #f6eeee;
+	color: #000;
 }
 
 .btn-orange {
@@ -109,5 +110,5 @@ input{
 }
 
 .btn-orange:hover {
-	background-color: rgb(241, 200, 125);
+	background-color: #f1c87d;
 }
